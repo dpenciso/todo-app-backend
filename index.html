@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Todos</title>
+</head>
+<body>
+    <header>
+        <h1 class="headerTitle">Todos!</h1>
+    </header>
+    <div class="input-container">
+        <div class="input-group">
+            <input type="text" id="todo-input" class="form-control" placeholder="Todo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle custom-btn custom-dropdown" type="button" id="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</button>
+                <div class="dropdown-menu">
+                    <div class="list-of-categories">
+                        <a class="dropdown-item" id="cat" href="#">Grocery</a>
+                        <a class="dropdown-item" id="cat" href="#">House</a>
+                        <a class="dropdown-item" id="cat" href="#">School</a>
+                    </div>
+                <div role="separator" class="dropdown-divider"></div>
+                    <input type="text" id="category-input" class="form-control" placeholder="New Category" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button class="btn btn-outline-secondary custom-btn dropdown-item custom-input-button">Add new Category</button>
+                </div>
+                    <button class="btn btn-outline-secondary custom-btn" id="todo-button" type="button">Add</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="show-hide-todos">
+            <div class="toggle-done">
+                <button id="hide-done-todos" class="btn btn-outline-secondary custom-btn">Hide Done Todos</button>
+            </div>
+            <div class="toggle-done">
+                <button id="show-done-todos" class="btn btn-outline-secondary custom-btn">Show Done Todos</button>
+            </div>
+        </div>
+        <div id="listDiv">
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/82e4275e9f.js" crossorigin="anonymous"></script>
+</body>
+</html>
